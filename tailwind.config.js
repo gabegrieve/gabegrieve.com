@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    extend: {
+      colors: {
+        "off-white": "#F8FAFC",
+      },
+    },
   },
   plugins: [],
-}
+};
