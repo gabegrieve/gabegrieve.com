@@ -1,12 +1,16 @@
 @tailwind base;
 
+@font-face {
+  font-family: gt-america;
+  font-weight: 400;
+  src: url(/fonts/gt-america-standard-regular.woff2);
+}
 html,
 body {
-  @apply bg-off-white;
+  @apply bg-off-white antialiased;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: gt-america, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -31,4 +35,18 @@ img {
 
 @tailwind components;
 
+.svg-control svg {
+  @apply w-full h-auto;
+}
+
+.svg-control svg:focus,
+.svg-control svg:active {
+  @apply outline-none;
+}
+
+.svg-control svg path,
+.svg-control svg circle,
+.svg-control svg rect {
+  @apply fill-current;
+}
 @tailwind utilities;
