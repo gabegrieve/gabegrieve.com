@@ -27,12 +27,19 @@ img {
   max-width: 100%;
   display: block;
 }
+  
 
 @tailwind components;
 
-/* Headings */
-
 @responsive {
+
+  .heading-extreme {
+    font-size: 132px;
+  }
+
+  .heading-ultra {
+    font-size: 96px;
+  }
 
   .heading-super {
     @apply text-6xl;
@@ -46,13 +53,26 @@ img {
     @apply text-2xl;
   }
 
-        .heading-three {
-          @apply text-xl;
-        }
+  .heading-three {
+    @apply text-xl;
+  }
+
 }
 
 .font-raks {
   font-family: raks, sans-serif;
+}
+
+.btn-section {
+  @apply easy-transition;
+}
+
+.btn-section:hover {
+  @apply bg-black-blue;
+}
+
+.btn-section:hover h2 {
+  @apply text-off-white;
 }
 
 .svg-control {
