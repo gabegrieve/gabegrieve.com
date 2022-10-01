@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Socials from "../components/socials";
 import Arrow from "../public/icons/arrow.svg";
+import Container from "../components/container";
 import SectionHeading from "../components/sectionHeading";
 import PhotoSlider from "../components/photoSlider";
 import ProjectSlider from "../components/projectSlider";
@@ -40,11 +41,11 @@ export default function Home() {
         </section>
       </div>
       <SectionHeading link="" title="Latest Projects" />
-      <section className="container py-4 md:py-8 lg:py-16">
+      <Container>
         <ProjectSlider />
-      </section>
+      </Container>
       <SectionHeading link="" title="Work Journal" />
-      <section className="container py-4 md:py-8 lg:py-16">
+      <Container>
         <div className="grid grid-cols-12">
           <ArticleSnippet
             link=""
@@ -65,6 +66,19 @@ export default function Home() {
             quote="A good brief is super important. Every time I'm working on a design project, I have the brief open on my desktop to constantly refer to as I work. A lot of designers work exactly the same way."
           />
         </div>
+      </Container>
+      <section className="bg-black-blue text-white">
+        <Container>
+          <h3 className="heading-one xs:heading-super md:heading-ultra xl:heading-extreme font-raks text-center uppercase leading-none md:text-left">
+            Do you like this website?
+          </h3>
+          <div className="flex flex-col items-center">
+            <h4 className="heading-two">Thanks! You can have it</h4>
+            <div className="svg-control w-16 rotate-90 transform">
+              <Arrow />
+            </div>
+          </div>
+        </Container>
       </section>
     </Layout>
   );
