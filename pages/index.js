@@ -4,6 +4,7 @@ import Arrow from "../public/icons/arrow.svg";
 import SectionHeading from "../components/sectionHeading";
 import PhotoSlider from "../components/photoSlider";
 import ProjectSlider from "../components/projectSlider";
+import ArticleSnippet from "../components/articleSnippet";
 
 export default function Home() {
   return (
@@ -39,8 +40,31 @@ export default function Home() {
         </section>
       </div>
       <SectionHeading link="" title="Latest Projects" />
-      <section className="container py-4 md:py-8">
+      <section className="container py-4 md:py-8 lg:py-16">
         <ProjectSlider />
+      </section>
+      <SectionHeading link="" title="Work Journal" />
+      <section className="container py-4 md:py-8 lg:py-16">
+        <div className="grid grid-cols-12">
+          <ArticleSnippet
+            link=""
+            title="Invisibility as a user interface methodology"
+            date="26 September 2022"
+            quote="While most good designers know that the best thing you can do to a layout is to simplify it and strip things away, our tendency to trust our eyes and design intuition can often lead us down the inverse path. "
+          />
+          <ArticleSnippet
+            link=""
+            title="Building HTML eDMs (or 'How I learned to stop worrying and love the table element')"
+            date="July 12, 2017"
+            quote="You see, when the major web browsers got together and said 'hey, we should try to adhere to a set of standards so that all code is rendered the same way', all of the email clients got together and said 'hey, remember how good the web was in 1999? Let's keep that legacy alive!'"
+          />
+          <ArticleSnippet
+            link=""
+            title="Writing the perfect brief"
+            date="July 12, 2017"
+            quote="A good brief is super important. Every time I'm working on a design project, I have the brief open on my desktop to constantly refer to as I work. A lot of designers work exactly the same way."
+          />
+        </div>
       </section>
     </Layout>
   );
