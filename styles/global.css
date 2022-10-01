@@ -63,12 +63,24 @@ img {
   font-family: raks, sans-serif;
 }
 
+.btn-icon span {
+  @apply mr-2 easy-transition;
+}
+
+.btn-icon:hover span {
+  @apply mr-4;
+}
+
+.btn-icon:hover {
+  @apply text-light-blue;
+}
+
 .btn-section {
   @apply easy-transition;
 }
 
 .btn-section:hover {
-  @apply bg-black-blue;
+  @apply bg-black-blue border-black-blue;
 }
 
 .btn-section:hover h2 {
@@ -107,7 +119,12 @@ img {
 .object-square img {
   @apply w-full h-full object-cover;
 }
+
 @tailwind utilities;
+
+.contrast-gradient {
+  @apply bg-gradient-to-t from-black to-transparent opacity-50;
+}
 
 .safari-mask {
   -webkit-mask-image: -webkit-radial-gradient(white, black);
