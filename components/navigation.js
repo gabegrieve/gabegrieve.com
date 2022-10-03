@@ -5,11 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Navigation({ children }) {
   return (
     <div className="container">
-      <div className="flex justify-between items-center my-4 relative">
+      <div className="relative my-4 flex items-center justify-between">
         <div className="swiper-container">
           <div className="flex">
             <h2 className="mr-1 whitespace-nowrap">{siteTitle}</h2>
-            <div className="w-full text-light-blue">
+            <div className="w-96 text-light-blue">
               <Swiper
                 autoplay={{ delay: 3000 }}
                 effect="fade"

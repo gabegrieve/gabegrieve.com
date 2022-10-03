@@ -21,6 +21,7 @@ module.exports = {
         "black-blue": "#111729",
         "light-blue": "#A4C8E1",
         "dull-blue": "#64748B",
+        "black-blue-light": "#2C344D",
       },
       lineHeight: {
         tighter: "1.15",

@@ -14,7 +14,7 @@ export default function ArticleSnippet(props) {
         </div>
       </div>
       <article className="col-span-12 lg:col-span-6">
-        <h3 className="heading-two lg:mb-4">{props.title}</h3>
+        <h3 className="heading-three sm:heading-two lg:mb-4">{props.title}</h3>
         <p className="mb-4 hidden text-dull-blue lg:block">{props.quote}</p>
         <div className="flex items-baseline justify-between">
           <p className="text-light-blue lg:hidden">{props.date}</p>
